@@ -1,10 +1,16 @@
-export default function CourseGoal() {
+import { type CourseGoalProps } from "../types/Types.tsx";
+
+// type CourseGoalProps = {
+//   title: string;
+//   children: ReactNode;
+// };
+
+export default function CourseGoal({ title, description }: CourseGoalProps) {
   return (
     <article>
       <div>
-        <h1>Goal Manager</h1>
-        <h2>Title</h2>
-        <p>Description</p>
+        <h2>{title}</h2>
+        <p>{description}</p>
       </div>
       <div>
         <button>Delete</button>
