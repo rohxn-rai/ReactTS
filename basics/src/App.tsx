@@ -1,10 +1,13 @@
-import "./App.css";
+import CourseGoal from "./components/CourseGoal.tsx";
 
 function App() {
   return (
-    <>
-      <div></div>
-    </>
+    <main>
+      <div>
+        <CourseGoal />
+        <CourseGoal />
+      </div>
+    </main>
   );
 }
 
