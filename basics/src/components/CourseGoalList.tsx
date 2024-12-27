@@ -1,5 +1,5 @@
-import CourseGoal from "./CourseGoal.tsx";
-import { CourseGoalListProps, CourseGoalProps } from "../types/Types.tsx";
+import CourseGoal from "./CourseGoal";
+import { CourseGoalListProps, CourseGoalProps } from "../types/Types";
 
 export default function CourseGoalList({ goals }: CourseGoalListProps) {
   return (

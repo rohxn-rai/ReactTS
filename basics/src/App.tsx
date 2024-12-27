@@ -1,13 +1,13 @@
 import goalsImg from "./assets/goals.jpg";
-import CourseGoal from "./components/CourseGoal.tsx";
-import CourseGoalList from "./components/CourseGoalList.tsx";
-import Header from "./components/Header.tsx";
+import CourseGoal from "./components/CourseGoal";
+import CourseGoalList from "./components/CourseGoalList";
+import Header from "./components/Header";
 import { useState } from "react";
 
 type CourseGoal = {
   id: number;
   title: string;
-  description: string; // corrected typo
+  description: string;
 };
 
 function App() {
@@ -18,7 +18,7 @@ function App() {
       const newGoal: CourseGoal = {
         id: Math.random(),
         title: "Learn React + TS",
-        description: "Learn it from the ground up!", // corrected typo
+        description: "Learn it from the ground up!",
       };
 
       return [...prevGoals, newGoal];
